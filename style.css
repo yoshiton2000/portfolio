@@ -1,0 +1,607 @@
+html{
+    font-size: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+nav ul :not(.active){
+    list-style: none;
+}
+
+
+
+/* header  */
+
+#header{
+    position:fixed;
+    bottom: 90px;
+    left: 40px;
+    width: 30%;
+    z-index: 20;
+}
+
+@media screen and (max-width:600px){
+    #home a{
+        color: white;
+    }
+
+    #home h1{
+        color: white;
+    }
+
+    #home #footer{
+        color: white;
+    }
+
+
+}
+#header nav ul li{
+    line-height: 1.5;
+}
+
+#header nav ul li a{
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header nav ul:hover  a:not(:hover){
+    opacity: 0.6;
+}
+
+#header nav{
+    display: flex;
+}
+
+/* h1  */
+h1{
+    z-index: 20;
+    width: 40px;
+    position:fixed;
+    right: 35px;
+    top: 45px;
+}
+
+h1 p{
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-family:Verdana,  Tahoma, sans-serif;
+  font-weight:100;
+}
+
+h1 #name{
+font-size: 0.6rem;
+opacity: 0.6;
+position: absolute;
+top: 55px;
+right: 100px;
+-ms-writing-mode: tb-rl;
+writing-mode: vertical-rl;
+-webkit-text-orientation: mixed;
+text-orientation: mixed;
+}
+
+/* main  */
+  main{
+   max-width: 400px;
+    margin: 0 auto;
+}
+
+#photo{
+vertical-align: bottom;
+line-height: 0.55;
+}
+
+/* profile */
+
+
+
+
+#profile{
+    margin: 300px auto;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    line-height: 3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    height:400px;
+}
+
+#profile_background{
+    background-image: url("./img-background/background.jpg");
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* portfolio  */
+
+#portfolio h2 a{
+    color: black;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: mixed;
+    text-orientation: mixed;
+}
+
+
+#portfolio article{
+    width: 150px;
+    margin: 0 auto;
+    height: 400px;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+
+
+#portfolio .portfolio_text{
+    position: relative;
+    color: rgb(24, 24, 24);
+    padding-top: 100px;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+#portfolio .portfolio_text h2 {
+    position: absolute;
+    line-height: 3.5;
+    font-size: 2.5rem;
+    padding-left: 5px;
+}
+
+#portfolio_background .portfolio_text  a{
+    color: rgb(10, 10, 10);
+    width: 100%;
+    height: 37%;
+}
+
+#portfolio_background #footer{
+    color: white;
+}
+
+#portfolio_background h1 {
+    color: white;
+}
+
+#portfolio_background a{
+    color: aqua;
+}
+
+#portfolio_img{
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        height: 100%;
+}  
+
+#portfolio_ul{
+    margin-left: 20px;
+}
+
+
+
+/* web  */
+
+#web_background{
+    background-color: rgb(38, 38, 38);
+}
+
+#web_background a{
+    color: aliceblue;
+}
+
+#web_background h1{
+    color: aliceblue;
+}
+
+#web_background p{
+    color: aliceblue;
+}
+
+#web_content img{
+    margin-bottom: 70px;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+/* photo  */
+#photo_background #video{
+width: 100%;
+height: 700px;
+object-fit: cover;
+}
+
+#photo_background h1{
+    color: white;
+}
+
+#photo_text{
+    margin: 0 auto;
+    color: black;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: mixed;
+    text-orientation: mixed;
+}
+
+#photo_text p{
+    padding: 15px;
+}
+
+/* art  */
+#art_video{
+    z-index: -1;
+    position: fixed;
+}
+
+#art_body a{
+    color: white;
+}
+
+#art_body h1{
+    color: white;
+}
+
+.art_content img{
+    width: 90%;
+    height: 90%;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: black;
+}
+
+.yellow{
+    background-color: yellow;
+    color: rgb(255, 0, 0)
+}
+
+.green{
+    background-color: green;
+    color:rgb(255, 255, 255);
+}
+
+.white{
+    background-color: white;
+    color: blue;
+}
+
+.black{
+    background-color: black;
+    color: rgb(0, 55, 255);
+}
+
+.art_content{
+    display: flex;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    padding: 5px;
+}
+.art_content p{
+    font-family: 'Zen Kurenaido', sans-serif;
+    margin-top: 100px;
+    font-size: 1.5rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation: mixed;
+    text-orientation: sideways;
+}
+
+/* handmade  */
+
+
+#hand_background{
+    background-image: url("./img-background/hand_background.jpg");
+    background-attachment: fixed;
+}
+
+
+#hand p{
+    font-size: 1.2rem;
+    background-color: #e8e8e8;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    box-shadow: 2px 2px 2px black;
+    margin: 0 auto;
+    color: rgb(24, 24, 24);
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#hand_background .box1{
+ position: fixed;
+ width: 170px;
+ height:170px;
+ top: 30px;
+ right: 10px;
+ background-color: #ff8181;
+ box-shadow: 2px 2px 2px black;
+}
+
+#hand_background .box2{
+    position: fixed;
+    width: 200px;
+    height:200px;
+    bottom: 30px;
+    left: 25px;
+    z-index: 1;
+    background-color: #5238ff;
+    box-shadow: 2px 2px 2px black;
+   }
+
+.handmade_content{
+    border-top: 20px solid #B37D4D;    
+    border-right: 20px solid #B37D4D;  
+    border-bottom: 20px solid #D2AE7E; 
+    border-left: 20px solid #D2AE7E; 
+    box-shadow: 3px 3px 3px black;          
+    margin-bottom: 10px;
+   
+
+}
+#handmade_content_area img{
+    display: block;
+}
+
+
+#hand.slick-initialized{
+    display: block;
+    }
+
+
+    /* bodymake  */
+#body_background{
+    background-image: url("./img-background/body_background.jpg");
+    background-attachment: fixed;
+}
+
+#body_background h1{
+    color: white;
+}
+
+#body_background a{
+    color: white;
+}
+
+#body_background #footer p{
+    color:white;
+}
+
+.body_img{
+    position:relative;
+    top: 400px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.wated_p1 {
+    position: absolute;
+    top: 660px;
+    left: 350px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.wated_p2 {
+    position: absolute;
+    top: 1410px;
+    left: 350px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.wated_p3 {
+    position: absolute;
+    top: 2180px;
+    left: 350px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.wated_p4 {
+    position: absolute;
+    top: 2940px;
+    left: 320px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* blog */
+.blog_content{
+    margin-bottom: 50px;
+}
+.blog_content p{
+    text-align: center;
+}
+
+/* contact  */
+
+.Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    
+  }
+  @media screen and (max-width: 480px) {
+    .Form {
+      margin-top: 40px;
+    }
+  }
+  .Form-Item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+  }
+  .Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+  }
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #5bc8ac;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  }
+/* footer  */
+
+#footer {
+    font-size: 0.6rem;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 20;
+}
